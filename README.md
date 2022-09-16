@@ -73,3 +73,4 @@ kubectl version
 
 
 # Useful info
+![container_defs](containers_definitions.png)
