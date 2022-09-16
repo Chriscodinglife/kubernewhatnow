@@ -1,6 +1,7 @@
-# kubernewhatnow
+# kuberne-whatnow
 Getting started with Kubernetes and Docker
 
+![kube](kube.png)
 
 ## Some Kubectl basic commands 
 Viewing resources in a namespace
@@ -71,6 +72,7 @@ kubectl version
 
 - The apply command is a declarative command, not imperative, telling kubernetes to apply the necessary changes based on the yaml file requirements
 
+![docker](docker.png)
 
 # Useful info
 ![container_defs](containers_definitions.png)
