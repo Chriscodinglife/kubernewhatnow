@@ -3,6 +3,8 @@ Getting started with Kubernetes and Docker
 
 ![kube](kube.png)
 
+# Kubernetes
+
 ## Some Kubectl basic commands 
 Viewing resources in a namespace
 ```
@@ -73,6 +75,61 @@ kubectl version
 - The apply command is a declarative command, not imperative, telling kubernetes to apply the necessary changes based on the yaml file requirements
 
 ![docker](docker.png)
+# Docker
+
+# Some useful docker commands
+
+Build and image from a docker file
+```
+docker build
+```
+
+Start the docker CLI 
+```
+docker CLI
+```
+
+Remove a container
+```
+docker container rm
+```
+
+List images
+```
+docker images
+```
+
+list the containers
+```
+docker ps
+```
+
+Pull the latest image or repo from a registry
+```
+docker pull
+```
+
+Push an image or a repo to a registry
+```
+docker push
+```
+
+Run an image base on its name in a new container, or run a command in a new container
+```
+docker run
+```
+
+Stop one or more running containers
+```
+docker stop
+```
+
+Create a tag for a target image that refers to a source image
+```
+docker tag
+```
+
+
 
 # Useful info
 ![container_defs](containers_definitions.png)
