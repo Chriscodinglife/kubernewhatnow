@@ -222,8 +222,12 @@ docker tag
 # Useful info
 Some general definitions for the road
 
+## Docker terms
 ![docker](docker.png)
 
+## Kubernetes Terms
 ![kube_1](kube_defs1.png)
 
 ![kube_2](kube_defs2.png)
+
+## Config MAps and Secret Terms
