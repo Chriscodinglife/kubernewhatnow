@@ -220,6 +220,8 @@ docker tag
 
 
 # Useful info
+Some general definitions for the road
+
 ![docker](docker.png)
 
 ![kube_1](kube_defs1.png)
