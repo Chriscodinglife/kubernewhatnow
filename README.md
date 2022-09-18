@@ -1,6 +1,8 @@
 # kuberne-whatnow
 Getting started with Kubernetes and Docker
 
+### Quizlet Study Set: https://quizlet.com/_bzbtkf?x=1qqt&i=3mdcjl
+
 ![kube](kube.png)
 
 # Kubernetes
@@ -141,6 +143,11 @@ kubectl delete -f <yaml.file>
 Delete a service
 ```
 kubectl delete service <service-name>
+```
+
+Get secrets from a specific namespace
+```
+kubectl get secrets --namespace=default
 ```
 
 Restart a deployment so containers to restart. Useful when environment variables need to be set
