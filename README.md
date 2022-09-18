@@ -6,7 +6,7 @@ Getting started with Kubernetes and Docker
 # Kubernetes
 
 ## Some Kubectl basic commands 
-Viewing resources in a namespace
+Viewing deployments resources in a namespace
 ```
 kubectl get deployments --namespace <namespace>
 ```
@@ -45,7 +45,7 @@ kubectl delete
 
 Expose a resource to the internet as a new Kubernetes service
 ```
-kubectl expose
+kubectl expose <deployment>/<app-name>
 ```
 
 Manage the rollout of a resource
@@ -58,6 +58,11 @@ List all the pods in the namespace
 kubectl get pods
 ```
 
+Get more details about a resource such as pods using wide option
+```
+kubectl get pods -o wide
+```
+
 Create and runs a particular image in a pod
 ```
 kubectl run
@@ -66,6 +71,31 @@ kubectl run
 Prints the client and server version information
 ```
 kubectl version
+```
+
+Descibe a specific pod
+```
+kubectl describe pod <pod-name>
+```
+
+Delete a pod
+```
+kubectl delete pod <pod-name>
+```
+
+List or see the exposed services that were created for a cluster
+```
+kubectl get services
+```
+
+Create a proxy, that will expose the cluster IP outside of the cluster
+```
+kubectl proxy
+```
+
+Delete a deployment and a service
+```
+kubectl delete deployment/<app-name> service/<app-name>
 ```
 
 ## Some important facts for Kubernetes
