@@ -157,7 +157,7 @@ Restart a deployment so containers to restart. Useful when environment variables
  
  - Environment variables get set at the start time of a container running. To set them again, restart the container
 
-![docker](docker.png)
+
 # Docker
 
 # Some useful docker commands
@@ -220,7 +220,7 @@ docker tag
 
 
 # Useful info
-![container_defs](containers_definitions.png)
+![docker](docker.png)
 
 ![kube_1](kube_defs1.png)
 
