@@ -231,3 +231,4 @@ Some general definitions for the road
 ![kube_2](kube_defs2.png)
 
 ## Config MAps and Secret Terms
+![config](configsecrets.png)
