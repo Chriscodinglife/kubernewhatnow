@@ -164,6 +164,6 @@ docker tag
 # Useful info
 ![container_defs](containers_definitions.png)
 
-![kube_1](kubernetes_1.png)
+![kube_1](kube_defs1.png)
 
-![kube_2](kubernetes_2.png)
+![kube_2](kube_defs2.png)
