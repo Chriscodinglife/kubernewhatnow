@@ -98,11 +98,64 @@ Delete a deployment and a service
 kubectl delete deployment/<app-name> service/<app-name>
 ```
 
+Scale up a deployment with a given number of replicas
+```
+kubectl scale deployment <deployment-name> --replicas=3
+```
+
+Update a deployment to a new image, this will trigger the rolling update
+```
+kubectl set image <deployment>/<deployment-name> <app-name>=<image-repo>/<namespace>/<app-name>:<tag>
+```
+
+Get the status of the rolling update
+```
+kubectl rollout status <deployment>/<deployment-name>
+```
+
+Undo a rollout
+```
+kubectl rollout undo <deployment>/<deployment-name>
+```
+
+Get wide information when getting an object info
+```
+kubectl get deployments -o wide
+```
+
+Create a ConfigMap that contains a new message
+```
+kubectl create configmap app-config --from-literal=MESSAGE="This message came from a ConfigMap!"
+```
+
+Delete a configmap (replace app-config with the configmap name)
+```
+kubectl delete configmap app-config
+```
+
+Delete a deployment
+```
+kubectl delete -f <yaml.file>
+```
+
+Delete a service
+```
+kubectl delete service <service-name>
+```
+
+Restart a deployment so containers to restart. Useful when environment variables need to be set
+
 ## Some important facts for Kubernetes
 
 - kube-system is not a user created namespace. It is provided by the cluster
 
 - The apply command is a declarative command, not imperative, telling kubernetes to apply the necessary changes based on the yaml file requirements
+
+- To push out an update, you can use rolling updates that will close down pods and spin up new ones so that there is no downtime of your application
+
+ - ConfigMaps are used to store confi information separate from the code of an app so it won't be hardcoded. This can let certain information change without having to deploy the app
+ 
+ - Environment variables get set at the start time of a container running. To set them again, restart the container
 
 ![docker](docker.png)
 # Docker
@@ -142,6 +195,11 @@ docker pull
 Push an image or a repo to a registry
 ```
 docker push
+```
+
+A good example of how to build and push a docker image
+```
+docker build -t <repo>/<namesapce>/<app>:<tag> . && docker push <repo>/<namespace>/<app>:<tag>
 ```
 
 Run an image base on its name in a new container, or run a command in a new container
