@@ -239,3 +239,8 @@ Some general definitions for the road
 
 ## Config MAps and Secret Terms
 ![config](configsecrets.png)
+
+## The Cloud Native Trail Map 
+
+The steps to Cloud Native Development
+![cloud](https://raw.githubusercontent.com/cncf/trailmap/master/CNCF_TrailMap_latest.png)
