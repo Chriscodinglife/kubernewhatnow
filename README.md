@@ -257,6 +257,11 @@ docker tag
 ```
 
 
+# Typical workflow for deploying an App
+
+1. Build your image ie. use docker build
+2. Push your image to a registry
+3. 
 
 # Useful info
 Some general definitions for the road
