@@ -150,9 +150,37 @@ Get secrets from a specific namespace
 kubectl get secrets --namespace=default
 ```
 
+# Open Shift
+
+Get the oc Open Shift Version
+```
+oc version
+```
+
+Get pods
+```
+oc get pods
+```
+
+List out build configs
+```
+oc get buildconfigs
+```
+
+View current OpenShift project in use
+```
+oc project
+```
+
+Switch to a project
+```
+oc project <project_name>
+```
+
+
 Restart a deployment so containers to restart. Useful when environment variables need to be set
 
-## Some important facts for Kubernetes
+## Some important facts
 
 - kube-system is not a user created namespace. It is provided by the cluster
 
@@ -163,6 +191,10 @@ Restart a deployment so containers to restart. Useful when environment variables
  - ConfigMaps are used to store confi information separate from the code of an app so it won't be hardcoded. This can let certain information change without having to deploy the app
  
  - Environment variables get set at the start time of a container running. To set them again, restart the container
+
+- Open Shift projects are Kubernetes namespaces with more admin functions.
+
+- Open Shift includes a CLI and a web console view
 
 
 # Docker
@@ -240,7 +272,14 @@ Some general definitions for the road
 ## Config MAps and Secret Terms
 ![config](configsecrets.png)
 
+
+## Open Shift Terms
+
+![pc1](oc_terms1.png)
+![oc2](oc_terms2.png)
+
 ## The Cloud Native Trail Map 
 
 The steps to Cloud Native Development
 ![cloud](https://raw.githubusercontent.com/cncf/trailmap/master/CNCF_TrailMap_latest.png)
+
