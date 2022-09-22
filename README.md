@@ -262,7 +262,8 @@ docker tag
 1. Build your image ie. use docker build
 2. Push your image to a registry using docker push
 3. Verify your image exists in the registry
-4. 
+4. In Either Kubeernetes or OpenShift, create a deployment to pull the image from your registry
+
 
 # Useful info
 Some general definitions for the road
